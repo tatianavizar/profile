@@ -1,10 +1,30 @@
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
+
 body {
   background-color: #9d8189;
   font-family: Alata;
   color: black;
   font-size: 16px;
   line-height: 32px;
-
 }
 
 h1 {
@@ -47,20 +67,18 @@ li {
   text-decoration: none;
   list-style-type: none;
   display: inline;
-  font-size: 16px;
-  padding: 0, 16px;
+  padding: 0 32px;
+  font-size: 32px;
 
 }
+
 
 .text-card {
   background: #F8F6F7;
   padding: 32px;
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  margin-bottom: 48px;
-  margin-top: 48px;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: 48px 32px;
   text-align: center;
 }
 
@@ -69,7 +87,13 @@ li {
   border-radius: 50%;
 }
 
+.img-format {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
 #porfolio {
   text-align:center;
-  display:flexbox;
 }
